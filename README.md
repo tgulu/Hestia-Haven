@@ -5,21 +5,16 @@ Hestia Haven is an Airbnb clone website that allows users to explore and rent di
 ## URL: https://tgulu.github.io/Hestia-Haven/
 
 ## Features
-Navigation menu for browse different categories.
-Sort bar to showcases different houses based on different criterias.
+Navigation menu for browsing different categories.
+Sort bar to showcase different houses based on different criteria.
 Card layout to display individual house listings.
 Each card includes an image, title, rating, host information, availability dates, and pricing.
 
 ## Technologies Used
 
-<ol>
-• JavaScript
-
-• CSS
-
-• HTML
-
-</ol>
+1. JavaScript
+2. CSS
+3. HTML
 
 ## Image of Website
 ![image](https://github.com/tgulu/Hestia-Haven/assets/86728005/d86facea-7de0-4345-8f33-bc1144b6a380)
