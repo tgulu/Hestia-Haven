@@ -12,12 +12,9 @@ Each card includes an image, title, rating, host information, availability dates
 
 ## Technologies Used
 
-<ol>
-1.JavaScript
-2.CSS
-3.HTML
-
-</ol>
+• JavaScript
+• CSS
+• HTML
 
 ## Image of Website
 ![image](https://github.com/tgulu/Hestia-Haven/assets/86728005/d86facea-7de0-4345-8f33-bc1144b6a380)
