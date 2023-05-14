@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Hestia Haven</title>
+
+
+  <link rel="stylesheet" href="style.css">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css"
+    integrity="sha512-yDUXOUWwbHH4ggxueDnC5vJv4tmfySpVdIcN1LksGZi8W8EVZv4uKGrQc0pVf66zS7LDhFJM7Zdeow1sw1/8Jw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Top Section Container -->
+  <div class="top-section-container">
+    <!-- Top Bar -->
+    <div id="top" class="top-bar">
+      <h3 class="intro">Home Away From Home</h3>
+      <p>Find Out More</p>
+    </div>
+    <!-- Top Bar End -->
+
+    <!-- NavBar -->
+
+    <div class="navbar">
+      <div class="crown">
+        <i class="title fa-sharp fa-solid fa-crown"></i>
+        <h1>Hestia Haven</h1>
+
+      </div>
+
+      <div class="search">
+        <form>
+          <div class="input-container">
+            <input type="text" placeholder="Search Housing">
+          </div>
+          <div>
+            <button>
+              <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="menu">
+        <ul class="nav-menu">
+          <li>
+            <a onclick="closeMenu()" href="#listings" class="nav-link">Listing</a>
+          </li>
+          <li>
+            <a onclick="closeMenu()" href="#popular" class="nav-link">Popular</a>
+          </li>
+          <li>
+            <a onclick="closeMenu()" href="#new" class="nav-link">New</a>
+          </li>
+        </ul>
+        <div onclick="mobileMenu()" class="mobile">
+          <!-- <div onclick="mobileMenu()" class="menu-bar"> -->
+
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Sort Bar -->
+    <div class="sort-bar">
+
+      <div class=>
+        <p>Apartments</p>
+        <i class="fa-regular fa-building"></i>
+      </div>
+
+      <div>
+        <p>Beach</p>
+        <i class="fa-solid fa-water-ladder"></i>
+      </div>
+
+      <div>
+        <p>Cabins</p>
+        <i class="fa-solid fa-campground"></i>
+      </div>
+
+      <div>
+        <p>Games</p>
+        <i class="fa-solid fa-gamepad"></i>
+      </div>
+
+      <div>
+        <p>Houses</p>
+        <i class="fa-solid fa-house"></i>
+      </div>
+
+      <div>
+        <p>Rooms</p>
+        <i class="fa-solid fa-bed"></i>
+      </div>
+
+      <div>
+        <p>Scenery</p>
+        <i class="fa-sharp fa-solid fa-tree"></i>
+      </div>
+
+      <div>
+        <p>Summer</p>
+        <i class="fa-solid fa-umbrella-beach"></i>
+      </div>
+
+      <div>
+        <p>Winter</p>
+        <i class="fa-solid fa-person-skiing"></i>
+      </div>
+
+    </div>
+    <!-- Sort Bar End -->
+  </div>
+  <!-- Top Section Container End -->
+
+
+  <!-- Listings -->
+  <div id="listings" class="listing">
+
+    <!-- 1.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="/">
+
+      <div>
+        <div class="card-title">
+          <h4>Grizedale, Satterthwaite</h4>
+          <p>4.2 <i class="fa-solid fa-star"> </i></p>
+        </div>
+        <p><span class="grey">Hosted by Housing Estates</span></p>
+        <p><span class="grey">March 1 - 7 </span></p>
+        <p>£233 a night</p>
+      </div>
+    </div>
+
+    <!-- 2.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1595877244574-e90ce41ce089?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHN1bW1lciUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Woking, Surrey</h4>
+          <p>4.85<i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Individual Host</span></p>
+        <p><span class="grey">26 Jul - 1 Aug</span></p>
+        <p>£305 a night</p>
+      </div>
+    </div>
+
+    <!-- 3.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1544070515-dada2bc86650?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTN8fHN1bW1lciUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Hove, Sussex</h4>
+          <p>4.9<i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Hosted Harling Group</span></p>
+        <p><span class="grey">Jul 1 - 9</span></p>
+        <p>£230 a night</p>
+      </div>
+    </div>
+
+
+
+    <!-- 4.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1584738766473-61c083514bf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTh8fHN1bW1lciUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Nottingham, Nottinghamshire</h4>
+          <p>4.7 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+        <p><span class="grey">Dec 1 - 17</span></p>
+        <p>£489 a night</p>
+      </div>
+    </div>
+
+    <!-- 5.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1515263487990-61b07816b324?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXBhcnRtZW50c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Greenwich, London</h4>
+          <p>4.2 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Individual Host</span></p>
+        <p><span class="grey">April 22 - 30</span></p>
+        <p>£200 a night</p>
+      </div>
+    </div>
+
+    <!-- 6.Cards -->
+
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1544939514-aa98d908bc47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGNhc3RsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Aberdeen, Grampian</h4>
+          <p>5.0 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Hosted by Reality Group, LLC</span></p>
+        <p><span class="grey">Jun 1 - 7</span></p>
+        <p>£749 a night</p>
+      </div>
+    </div>
+
+    <!-- 7.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1595877244575-941ed61fb8f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDF8fHN1bW1lciUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Rydal, Cumbria</h4>
+          <p>3.9<i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Dorothy Wordsworth LTD</span></p>
+        <p><span class="grey">Dec 15 - 29</span></p>
+        <p>£449 a night</p>
+      </div>
+    </div>
+
+    <!-- 8.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1677182058554-e814041b22a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8dWslMjBidWlsZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Cambridge, Cambridgeshire</h4>
+          <p>3.8<i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Kings Housing, LLC</span></p>
+        <p><span class="grey">Nov 12 - 27</span></p>
+        <p>£459 a night</p>
+      </div>
+    </div>
+
+    <!-- 9.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1517541866997-ea18e32ea9e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJlYWNoJTIwaG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Torquay, Devon</h4>
+          <p>4.9<i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">New Torquay Group</span></p>
+        <p><span class="grey">May 12 - 21</span></p>
+        <p>£300 a night</p>
+      </div>
+    </div>
+
+    <!-- 10.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1595832880577-a84565468640?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTAxfHxiZWFjaCUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Brighton, Sussex</h4>
+          <p>5.0 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Hosted by Brighton House Group</span></p>
+        <p><span class="grey">Aug 1 - 17</span></p>
+        <p>£339 a night</p>
+      </div>
+    </div>
+
+    <!-- 11.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1591726015387-bbfd29215bf5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEzfHxiZWFjaCUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Norwich, Norfolk</h4>
+          <p>4.5 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">North-Folk Holding Group</span></p>
+        <p><span class="grey">Sept 15 - 24</span></p>
+        <p>£200 a night</p>
+      </div>
+    </div>
+
+    <!-- 12.Cards -->
+    <div class="card">
+      <img
+        src="https://images.unsplash.com/photo-1529703413164-adb3026bb1e6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA3fHxiZWFjaCUyMGhvdXNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+        alt="house" />
+      <div>
+        <div class="card-title">
+          <h4>Newquay, Cornwall</h4>
+          <p>4.1 <i class="fa-solid fa-star"></i></p>
+        </div>
+        <p><span class="grey">Beach Housing LLC</span></p>
+        <p><span class="grey">Jul 1 - 20</span></p>
+        <p>£285 a night</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Listing End -->
+
+  <!-- Popular -->
+
+  <div id="popular" class="popular">
+    <div class="popular-container">
+      <div class="title">
+        <h1>Popular</h1>
+      </div>
+      <div class="popular-wrapper">
+        <div class="main">
+          <img
+            src="https://a0.muscache.com/im/pictures/c238f6c3-e3d8-44c4-b529-9fabce2004d4.jpg?im_w=1200"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/54a382e7-1776-4ad1-897e-e256ed641574.jpg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/a0890b35-a773-4a21-8e32-68a0aeaa109c.jpg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/f1f5ee99-3f47-4576-845b-800f835864a4.jpg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/61793938-f608-449e-bcd7-1b4129cff231.jpg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/e6420659-b94c-46eb-b14a-4037d7275fd4.jpg?im_w=1200"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src=" https://a0.muscache.com/im/pictures/08f57375-8370-47d6-a74f-8e7360b8c5d3.jpg?im_w=720"
+            alt="">
+        </div>
+
+       
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Popular End -->
+
+  <!-- New-Houses -->
+
+  <div id="new" class="popular">
+    <div class="popular-container">
+      <div class="title">
+        <h1>New</h1>
+      </div>
+      <div class="popular-wrapper">
+        <div class="">
+          <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/ddcfc1e2-18d5-4c9b-bb2a-70a1304b29fd.jpeg?im_w=1200"
+            
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/b06bc4ce-1418-4412-8bf1-67d620b51a5e.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="main">
+          <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/f6c73339-a41f-44ca-91c5-1f46c117f5e8.jpeg?im_w=1200"
+       
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/42f7434d-ef88-41b4-8e83-a329c9aa941c.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/715a475c-4904-45ab-9b35-66aa5a70bdb2.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/23d66caa-fc57-4c92-aa02-c90f650570ec.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="        https://a0.muscache.com/im/pictures/miso/Hosting-43423090/original/aef01fae-1a9e-4ed9-ab65-3b11765dcdba.jpeg?im_w=1200"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="new" class="popular">
+    <div class="popular-container">
+      <div class="title">
+      </div>
+      <div class="popular-wrapper">
+        <div class="">
+          <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/bd13814c-01ab-47ab-9563-acb6030c6024.jpeg?im_w=720"
+            
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/74d65e2e-4635-4a9b-85eb-a358f41c229b.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+          src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/555c432b-25f1-4e8f-919e-8cdb110c5e8a.jpeg?im_w=1200"
+       
+            alt="">
+        </div>
+
+        <div class="main">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/96578db0-ab4f-4719-a3ab-6f4ff743c468.jpeg?im_w=1200"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/0a470116-ba4e-4b81-99b7-c0dc9aed7f32.jpeg?im_w=720"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/7a385497-1632-400b-a6c2-215b6fffde56.jpeg?im_w=1200"
+            alt="">
+        </div>
+
+        <div class="">
+          <img
+            src="https://a0.muscache.com/im/pictures/miso/Hosting-18873460/original/9b63cb1b-0a23-4b46-a3ca-908797b171d0.jpeg?im_w=720"
+            alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- New-Houses End -->
+
+  <!-- Footer -->
+
+  <div class="footer">
+    <ul class="left-menu">
+      <li>© Hestia Haven, Inc</li>
+      <li>Company Details</li></li>
+      <li>UK Sitemap</li>
+      <li>Privacy</li>
+      <li>Terms and Conditions</li>
+    </ul>
+
+    <ul class="right-menu">
+      <li>Contact Us</li>
+      <li>Support</li>
+      <li><i class="fa-brands fa-square-instagram"></i></li>
+      <li><i class="fa-brands fa-facebook-f"></i></li>
+      <li><i class="fa-solid fa-money-check"></i></li>
+    </ul>
+  </div>
+
+
+  <!-- Footer End -->
+
+  <!-- Scroll to Top -->
+
+  <div class="top-scroll">
+    <a href="#top">
+      <i class="fa-solid fa-angle-up"></i>
+      
+     </a>
+  </div>
+
+   <!-- Scroll to Top End -->
+
+
+  <script>
+    // const menuBtn = document.querySelector('.menu-bar')
+    const menuBtn = document.querySelector('.mobile');
+    const navMenu = document.querySelector('.nav-menu');
+
+    const mobileMenu = () => {
+      menuBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    };
+
+    const closeMenu = () => {
+      navMenu.classList.toggle('active');
+    };
+  </script>
+</body>
+
+</html>
