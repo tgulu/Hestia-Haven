@@ -14,7 +14,9 @@ Each card includes an image, title, rating, host information, availability dates
 
 <ol>
 1.JavaScript
+
 2.CSS
+
 3.HTML
 
 </ol>
