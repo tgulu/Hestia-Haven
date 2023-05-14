@@ -11,8 +11,13 @@ Card layout to display individual house listings.
 Each card includes an image, title, rating, host information, availability dates, and pricing.
 
 ## Technologies Used
-HTML
-CSS
-JavaScript
+
+<ol>
+1.JavaScript
+2.CSS
+3.HTML
+
+</ol>
 
 ## Image of Website
+![image](https://github.com/tgulu/Hestia-Haven/assets/86728005/d86facea-7de0-4345-8f33-bc1144b6a380)
