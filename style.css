@@ -314,10 +314,15 @@ img {
 
 
   }
+  .fa-bars {
+    font-size: 20px;
+    padding: 25px;
+  }
  
   .navbar h1{
     font-size: 1rem;
     margin-bottom: 1rem;
+    padding-left: 1.4rem;
   }
 
   /* #crowns, i
